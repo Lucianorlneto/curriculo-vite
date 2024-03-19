@@ -1,5 +1,11 @@
 import React from "react";
-import { Header, Section, SectionItem, SectionItemScore } from "./components";
+import {
+  Header,
+  Section,
+  SectionItem,
+  SectionItemScore,
+  Text,
+} from "./components";
 
 const Luciano: React.FC = () => {
   return (
@@ -7,7 +13,7 @@ const Luciano: React.FC = () => {
       <Header
         name="Luciano Rodrigues Lucio Neto"
         role="Desenvolvedor de Software"
-        address={`Rua Niquelândia, n 134, 59068-820, Natal. Brasil`}
+        address={`Rua Niquelândia, n 135, 59068-820, Natal. Brasil`}
         email="lucianorlneto@gmail.com"
         birthcity="Natal"
         birthdate="06/12/1994"
@@ -25,28 +31,28 @@ const Luciano: React.FC = () => {
         <SectionItem
           description={
             <div>
-              <p>
+              <Text>
                 Desenvolvedor Full Stack e Mobile, utilizando React Native, com
                 mais de 3 anos de experiência.
-              </p>
-              <br />
-              <p>
+              </Text>
+              <Text>
                 Com experiência profissional numa variedade de tecnologias,
-                incluindo JavaScript, SQL, GraphQL, React Native, React e Php.
-              </p>
-              <br />
-              <p>
+                incluindo <b>JavaScript</b>, <b>SQL</b>, <b>GraphQL</b>,{" "}
+                <b>React Native</b>, <b>React</b> e <b>PHP</b>.
+              </Text>
+              <Text>
                 Escolheu seguir a área de programação, seguindo seu curso de
                 engenharia da computação, por acreditar no poder da programação
                 para resolução de problemas. Se existem um problema
                 logístico/empresarial, certamente há uma solução utilizando da
                 programação, com auxílio da lógica e por isso é apaixonado pela
                 área.
-              </p>
+              </Text>
             </div>
           }
         />
       </Section>
+
       <Section index={2} title="EXPERIÊNCIA PROFISSIONAL">
         <SectionItem
           period="08/2019 — 03/2022"
@@ -54,28 +60,27 @@ const Luciano: React.FC = () => {
           city="Natal"
           description={
             <div>
-              <p>
+              <Text>
                 Desenvolvedor Full Stack integrante de uma equipe que trabalhava
                 com correções e desenvolvimento de novas funcionalidades em um
-                Sistema Integrado de Gestão Empresarial (ERP), constrúido em
-                PHP.
-              </p>
-              <br />
-              <p>
+                Sistema Integrado de Gestão Empresarial (ERP), desenvolvido em{" "}
+                <b>PHP</b>.
+              </Text>
+              <Text>
                 Responsável por integrações de API's de terceiros e com a
-                criação de API's REST.
-              </p>
-              <br />
-              <p>
-                Desenvolvedor Mobile, utilizando React Native, e trabalhando com
-                duas API's REST, uma desenvolvida em PHP, Lumen, e a outra
-                desenvolvida em Node e GraphQL.
-              </p>
-              <br />
-              <p>
-                Experiência com deploy de aplicações em Docker e Kubernetes e
-                utilização de banco de dados relacional, utilizando SQL.
-              </p>
+                criação de <b>API's REST</b>.
+              </Text>
+              <Text>
+                Desenvolvedor Mobile, utilizando <b>React Native</b>, e
+                trabalhando com duas API's, uma <b>REST</b> desenvolvida em{" "}
+                <b>PHP</b>, <b>Lumen</b>, e a outra <b>GraphQL</b> desenvolvida
+                em <b>Node</b>.
+              </Text>
+              <Text>
+                Experiência com deploy de aplicações em <b>Docker</b> e{" "}
+                <b>Kubernetes</b> e utilização de banco de dados <b>SQL</b>,{" "}
+                <b>PostgreSQL</b>.
+              </Text>
             </div>
           }
         />
@@ -83,13 +88,56 @@ const Luciano: React.FC = () => {
           period="05/2022 — 02/2023"
           title="Desenvolvedor Pleno Front-end em Sparta Labs"
           city="Blumenau (Remoto)"
-          description={<div></div>}
+          description={
+            <div>
+              <Text>
+                Integrante de uma squad ágil, com auxílio da plataforma{" "}
+                <b>ClickUp</b>, como front-end, trabalhou principalmente para
+                clientes integrantes do <b>Grupo Vamos</b> — controlados pela
+                holding SIMPAR, são líderes no setor de locação de caminhões,
+                máquinas e equipamentos do Brasil — implementando interfaces
+                desenvolvidas por designers da equipe, com auxílio da plataforma
+                Figma, utilizando <b>React Native</b>.
+              </Text>
+              <Text>
+                Respnsável, juntamente de sua squad, a desenvolver uma aplicação
+                mobile e a manter e adicionar novas funcionalidades a uma outra,
+                ambas em <b>React Native</b>.
+              </Text>
+            </div>
+          }
         />
         <SectionItem
           period="03/2023 — atualmente"
           title="Desenvolvedor Pleno Front-end em Môre"
           city="São Paulo (Remoto)"
-          description={<div></div>}
+          description={
+            <div>
+              <Text>
+                Participou de diferentes squads ágeis de desenvolvimento, com
+                auxílio das plataformas ClickUp e Jira, atuando como
+                desenvolvedor front-end em clientes como{" "}
+                <b>Henry Schein Brasil</b>, <b>Smiles Fidelidade</b>,{" "}
+                <b>Semex Brasil</b>,<b>Marisa</b> e integrantes do{" "}
+                <b>Grupo Vamos</b>.
+              </Text>
+              <Text>
+                Responsável por auxiliar no desenvolvimento, mantimento,
+                implementação de testes e integrações com <b>API`s REST</b> para
+                aplicações mobile utilizando <b>React Native</b>, assim como
+                aplicações web utilizando <b>React</b> e também aplicações
+                multiplataformas utilizando <b>React Native Web</b> e{" "}
+                <b>Expo</b>.
+              </Text>
+              <Text>
+                Trabalhou também com o auxílio do <b>Google Firebase</b> para
+                implementação de integração com <i>Push Notifications</i>,{" "}
+                <i>Remote Config</i> e <i>Database</i> e{" "}
+                <i>Firebase Authentication</i>, assim como também autou com
+                auxílio do <i>Google Analytics</i>
+              </Text>
+            </div>
+          }
         />
       </Section>
       <Section index={3} title="FORMAÇÃO ACADÊMICA">
@@ -131,11 +179,11 @@ const Luciano: React.FC = () => {
           period="ago 2017 — nov 2017"
           title="Engenheiro de Sistemas Embarcados em Centro de Lançamento da Barreira do Inferno (CLBI)"
           description={
-            <p>
+            <Text>
               Desenvolvimento da inteligência embarcada de um projeto
               confidencial do CLBI utilizando de micro processadores com auxílio
-              da plataforma de prototipagem Arduíno.
-            </p>
+              da plataforma de prototipagem <b>Arduíno</b> em <b>C++</b>.
+            </Text>
           }
         />
         <SectionItem
@@ -143,13 +191,13 @@ const Luciano: React.FC = () => {
           period="ago 2018 — jul 2019"
           title="Desenvolvedor Full Stack em Lógica Sistemas de Natal Informação"
           description={
-            <p>
+            <Text>
               Desenvolvedor Full Stack integrante de uma equipe que trabalhava
               com correções e desenvolvimento de novas funcionalidades em um
-              Sistema Integrado de Gestão Empresarial (ERP), constrúido em PHP,
-              com foco em soluções em software para problemas de
+              Sistema Integrado de Gestão Empresarial (ERP), constrúido em{" "}
+              <b>PHP</b>, com foco em soluções em software para problemas de
               telecomunicações e gestão empresarial.
-            </p>
+            </Text>
           }
         />
       </Section>
@@ -164,10 +212,10 @@ const Luciano: React.FC = () => {
       <Section index={4} title="HOOBIES">
         <SectionItem
           description={
-            <p>
-              Tocar guitarra, produção e mixagem de músicas, se apresentar em
+            <Text>
+              Tocar guitarra, produzir e mixar músicas e se apresentar em
               bares/clubes locais com bandas.
-            </p>
+            </Text>
           }
         />
       </Section>
