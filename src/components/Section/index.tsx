@@ -1,7 +1,7 @@
 import React from "react";
 
 interface SectionProps {
-  children: React.ReactElement | React.ReactElement[];
+  children: React.ReactNode;
   index: number;
   title: string;
 }
