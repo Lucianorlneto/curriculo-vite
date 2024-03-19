@@ -20,25 +20,27 @@ interface ItemProps {
 const Item: React.FC<ItemProps> = ({ label, content }) => {
   return (
     <div className="flex flex-row mb-2">
-      <p className="font-bold text-lg w-44 mr-6">{label}</p>
-      <p className="text-sm flex-1 mr-24 mt-1">
-        {Array.isArray(content)
-          ? content.map((item, index) => {
-              return (
-                <>
-                  <a
-                    className="text-black underline"
-                    href={item.link}
-                    target="_blank"
-                  >
-                    {item.name}
-                  </a>
-                  {index !== content.length - 1 ? ", " : ""}
-                </>
-              );
-            })
-          : content}
-      </p>
+      <p className="font-bold text-lg w-32 mr-6">{label}</p>
+      <div className="flex flex-1 items-center">
+        <p className="text-sm">
+          {Array.isArray(content)
+            ? content.map((item, index) => {
+                return (
+                  <>
+                    <a
+                      className="text-black underline"
+                      href={item.link}
+                      target="_blank"
+                    >
+                      {item.name}
+                    </a>
+                    {index !== content.length - 1 ? ", " : ""}
+                  </>
+                );
+              })
+            : content}
+        </p>
+      </div>
     </div>
   );
 };
