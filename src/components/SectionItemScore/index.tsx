@@ -5,7 +5,7 @@ import GrayCircle from "../../assets/graycircle.jpeg";
 interface SectionItemScore {
   content: {
     label: string;
-    score: number;
+    score?: number;
   }[];
 }
 
@@ -30,7 +30,7 @@ const SectionItemScore: React.FC<SectionItemScore> = ({ content }) => {
         return (
           <div className="flex flex-row">
             <p className="min-w-24">{item.label}</p>
-            <Score score={item.score} />
+            {item.score && <Score score={item.score} />}
           </div>
         );
       })}
