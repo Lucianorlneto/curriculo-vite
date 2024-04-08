@@ -1,4 +1,5 @@
 import React from "react";
+import { getTranslation } from "../../utils/language";
 
 interface HeaderProps {
   name: string;
@@ -10,6 +11,7 @@ interface HeaderProps {
   birthdate: string;
   birthcity: string;
   socialmedia: { name: string; link: string }[];
+  language?: Languages;
 }
 
 interface ItemProps {
@@ -55,6 +57,7 @@ const Header: React.FC<HeaderProps> = ({
   phone,
   role,
   socialmedia,
+  language,
 }) => {
   return (
     <div className="text-left mb-8">
@@ -62,14 +65,56 @@ const Header: React.FC<HeaderProps> = ({
       <p className="font-bold text-3xl mb-16">{role}</p>
       <div className="flex flex-row">
         <div className="flex-1">
-          <Item label="Endereço" content={address} />
-          <Item label="E-mail" content={email} />
-          <Item label="Nacionalidade" content={citizenship} />
+          <Item
+            label={getTranslation({
+              language: language,
+              ptText: "Endereço",
+              enText: "Address",
+            })}
+            content={address}
+          />
+          <Item
+            label={getTranslation({
+              language: language,
+              ptText: "E-mail",
+              enText: "Email",
+            })}
+            content={email}
+          />
+          <Item
+            label={getTranslation({
+              language: language,
+              ptText: "Nacionalidade",
+              enText: "Nacionality",
+            })}
+            content={citizenship}
+          />
         </div>
         <div className="flex-1">
-          <Item label="Telefone" content={phone} />
-          <Item label="Data de nascimento" content={`${birthdate}`} />
-          <Item label="Redes Sociais" content={socialmedia} />
+          <Item
+            label={getTranslation({
+              language: language,
+              ptText: "Telefone",
+              enText: "Phone",
+            })}
+            content={phone}
+          />
+          <Item
+            label={getTranslation({
+              language: language,
+              ptText: "Data de Nascimento",
+              enText: "Birthdate",
+            })}
+            content={`${birthdate}`}
+          />
+          <Item
+            label={getTranslation({
+              language: language,
+              ptText: "Redes Sociais",
+              enText: "Social Media",
+            })}
+            content={socialmedia}
+          />
         </div>
       </div>
     </div>
