@@ -37,7 +37,7 @@ const Luciano: React.FC = () => {
               </Text>
               <Text>
                 Com experiência profissional numa variedade de tecnologias,
-                incluindo <b>JavaScript</b>, <b>SQL</b>, <b>GraphQL</b>,{" "}
+                incluindo <b>TypeScript</b>, <b>SQL</b>, <b>GraphQL</b>,{" "}
                 <b>React Native</b>, <b>React</b> e <b>PHP</b>.
               </Text>
               <Text>
@@ -97,12 +97,12 @@ const Luciano: React.FC = () => {
                 holding SIMPAR, são líderes no setor de locação de caminhões,
                 máquinas e equipamentos do Brasil — implementando interfaces
                 desenvolvidas por designers da equipe, com auxílio da plataforma
-                Figma, utilizando <b>React Native</b>.
+                Figma, utilizando <b>React Native</b> e <b>TypeScript</b>.
               </Text>
               <Text>
                 Respnsável, juntamente de sua squad, a desenvolver uma aplicação
                 mobile e a manter e adicionar novas funcionalidades a uma outra,
-                ambas em <b>React Native</b>.
+                ambas em <b>React Native</b>, utilizando <b>TypeScript</b>.
               </Text>
             </div>
           }
@@ -124,10 +124,11 @@ const Luciano: React.FC = () => {
               <Text>
                 Responsável por auxiliar no desenvolvimento, mantimento,
                 implementação de testes e integrações com <b>API`s REST</b> para
-                aplicações mobile utilizando <b>React Native</b>, assim como
-                aplicações web utilizando <b>React</b> e também aplicações
-                multiplataformas utilizando <b>React Native Web</b> e{" "}
-                <b>Expo</b>.
+                aplicações mobile implementadas em <b>React Native</b>, assim
+                como aplicações web implementadas em <b>React</b>, utilizando a{" "}
+                <b>ChakraUi</b>, e também aplicações multiplataformas
+                implementadas em <b>React Native Web</b> e <b>Expo</b>,
+                utilizando <b>Tailwind</b> para estilização.
               </Text>
               <Text>
                 Trabalhou também com o auxílio do <b>Google Firebase</b> para
@@ -163,13 +164,16 @@ const Luciano: React.FC = () => {
       <Section index={4} title="COMPETÊNCIAS">
         <SectionItemScore
           content={[
-            { label: "SQL", score: 3 },
-            { label: "PHP", score: 3 },
-            { label: "JavaScipt", score: 4 },
-            { label: "Docker", score: 2 },
-            { label: "Git", score: 4 },
-            { label: "GraphQL", score: 3 },
-            { label: "React", score: 4 },
+            { label: "SQL" },
+            { label: "PHP" },
+            { label: "JavaScipt" },
+            { label: "TypeScript" },
+            { label: "Docker" },
+            { label: "Git" },
+            { label: "GraphQL" },
+            { label: "ReactJs" },
+            { label: "React Native" },
+            { label: "Tailwind" },
           ]}
         />
       </Section>
@@ -203,10 +207,7 @@ const Luciano: React.FC = () => {
       </Section>
       <Section index={4} title="IDIOMAS">
         <SectionItemScore
-          content={[
-            { label: "Português", score: 5 },
-            { label: "Inglês", score: 4 },
-          ]}
+          content={[{ label: "Português" }, { label: "Inglês" }]}
         />
       </Section>
       <Section index={4} title="HOOBIES">
