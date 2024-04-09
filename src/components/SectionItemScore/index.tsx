@@ -29,7 +29,7 @@ const SectionItemScore: React.FC<SectionItemScore> = ({ content }) => {
       {content?.map((item) => {
         return (
           <div className="flex flex-row">
-            <p className="min-w-24">{item.label}</p>
+            <p className="min-w-24 font-semibold">{item.label}</p>
             {item.score && <Score score={item.score} />}
           </div>
         );
