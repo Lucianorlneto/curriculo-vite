@@ -56,71 +56,13 @@ const LucianoEnglish: React.FC = () => {
 
       <Section index={2} title="Experience">
         <SectionItem
-          period="Aug 2019 — May 2022"
-          title="Junior Full Stack Developer at Lógica Natal Sistemas de Informação"
-          city="Natal"
-          description={
-            <div>
-              <Text>
-                Member of a team responsible for bug fixes and development of
-                new features in an Enterprise Resource Planning (ERP) system
-                developed in <b>PHP</b>.
-              </Text>
-              <Text>
-                Responsible for third-party API integrations and the creation of{" "}
-                <b>REST APIs</b>.
-              </Text>
-              <Text>
-                Mobile Developer Utilized <b>React Native</b> and worked with
-                two APIs: one <b>REST</b> API developed in <b>PHP</b> (
-                <b>Lumen</b>) and the other <b>GraphQL</b> developed in{" "}
-                <b>Node.js</b>.
-              </Text>
-              <Text>
-                Experience in Deployment of applications in <b>Docker</b> and{" "}
-                <b>Kubernetes</b> and use of <b>SQL</b> databases, specifically{" "}
-                <b>PostgreSQL</b>.
-              </Text>
-            </div>
-          }
-        />
-        <SectionItem
-          period="May 2022 — Feb 2023"
-          title="Front-end Mid-level Developer at Sparta Labs"
-          city="Blumenau (Remote)"
-          description={
-            <div>
-              <Text>
-                Member of an agile squad, utilizing the <b>ClickUp</b> platform,
-                as a front-end developer. Mainly worked for clients within the{" "}
-                <b>Vamos Group</b> — controlled by the SIMPAR holding company,
-                leaders in the truck, machinery, and equipment rental sector in
-                Brazil — implementing interfaces designed by the team's
-                designers, with the aid of the Figma platform, using{" "}
-                <b>React Native</b> and <b>TypeScript</b>.
-              </Text>
-              <Text>
-                Responsible, along with the squad I participated in, for
-                developing a mobile application and maintaining and adding new
-                features to another, both in <b>React Native</b>, using{" "}
-                <b>TypeScript</b>.
-              </Text>
-            </div>
-          }
-        />
-        <SectionItem
-          period="Mar 2023 — Present"
-          title="Front-end Mid-level Developer at Môre"
+          period="May 2022 — Present"
+          title="Sparta Labs/Môre"
           city="São Paulo (Remote)"
           description={
             <div>
-              <Text>
-                Participated in different agile development squads, with the
-                assistance of the <b>ClickUp</b> and <b>Jira</b> platforms,
-                acting as a front-end developer for clients such as{" "}
-                <b>Henry Schein Brasil</b>, <b>Smiles Fidelidade</b>,{" "}
-                <b>Semex Brasil</b>, <b>Marisa</b>, and members of the{" "}
-                <b>Vamos Group</b>.
+              <Text className="-mt-4 font-bold italic text-lg">
+                <li>Front-end Mid-level Developer</li>
               </Text>
               <Text>
                 Responsible for assisting in development, maintenance, test
@@ -129,7 +71,7 @@ const LucianoEnglish: React.FC = () => {
                 applications implemented in <b>React</b>, using <b>ChakraUi</b>,
                 and also cross-platform applications implemented in{" "}
                 <b>React Native Web</b> and <b>Expo</b>, using <b>Tailwind</b>{" "}
-                for styling.
+                for styling and <b>TypeScript</b>.
               </Text>
               <Text>
                 Also worked on the integration and implementation of tools from{" "}
@@ -158,25 +100,81 @@ const LucianoEnglish: React.FC = () => {
             </div>
           }
         />
+        <SectionItem
+          period="Aug 2018 — May 2022"
+          title="Lógica Sistemas de Informação"
+          city="Natal"
+          description={
+            <div>
+              <Text className="font-bold italic text-lg">
+                <li>Internship as Junior Full Stack Developer</li>
+              </Text>
+              <Text>
+                Full Stack Developer member of a team that worked on bug fixes
+                and development of new features in an Enterprise Resource
+                Planning (ERP) system, built in <b>PHP</b>, focusing on software
+                solutions for telecommunications and business management issues.
+              </Text>
+              <Text className="mt-4 font-bold italic text-lg">
+                <li>Junior Full Stack Developer</li>
+              </Text>
+              <Text>
+                Member of a team responsible for bug fixes and development of
+                new features in an Enterprise Resource Planning (ERP) system
+                developed in <b>PHP</b>.
+              </Text>
+              <Text>
+                Responsible for third-party API integrations and the creation of{" "}
+                <b>REST APIs</b>.
+              </Text>
+              <Text>
+                Mobile Developer Utilized <b>React Native</b> and worked with
+                two APIs: one <b>REST</b> API developed in <b>PHP</b> (
+                <b>Lumen</b>) and the other <b>GraphQL</b> developed in{" "}
+                <b>Node.js</b>.
+              </Text>
+              <Text>
+                Experience in Deployment of applications in <b>Docker</b> and{" "}
+                <b>Kubernetes</b> and use of <b>SQL</b> databases, specifically{" "}
+                <b>PostgreSQL</b>.
+              </Text>
+            </div>
+          }
+        />
+        <SectionItem
+          period="Aug 2017 — Nov 2017"
+          title="Barreira do Inferno Launch Center (CLBI)"
+          city="Natal"
+          description={
+            <div>
+              <Text className="font-bold italic text-lg">
+                <li>Internship as Embedded Systems Engineer</li>
+              </Text>
+              <Text>
+                Development of embedded intelligence for a confidential project
+                at CLBI using microprocessors with the assistance of the
+                prototyping platform <b>Arduino</b> in <b>C++</b>.
+              </Text>
+            </div>
+          }
+        />
       </Section>
       <Section index={3} title="EDUCATION">
         <SectionItem
           city="Natal"
-          period="Feb 2010 — Nov 2012"
-          title="Nossa Senhora das Neves High School"
-          description={<p>High School</p>}
-        />
-        <SectionItem
-          city="Natal"
-          period="Mar 2013 — Jun 2016"
+          period="Mar 2013 — Jul 2018"
           title="Federal University of Rio Grande do Norte (UFRN)"
-          description={<p>Bachelor's Degree in Science and Technology</p>}
-        />
-        <SectionItem
-          city="Natal"
-          period="Jul 2016 — Jul 2018"
-          title="Federal University of Rio Grande do Norte (UFRN)"
-          description={<p>Bachelor's Degree in Computer Engineering</p>}
+          description={
+            <div>
+              <li className="text-lg font-[500]">
+                Bachelor's Degree in Science and Technology (Mar 2013 — Jun
+                2016)
+              </li>
+              <li className="text-lg font-[500]">
+                Bachelor's Degree in Computer Engineering (Jul 2016 — Jul 2018)
+              </li>
+            </div>
+          }
         />
       </Section>
       <Section index={4} title="SKILLS">
@@ -193,33 +191,6 @@ const LucianoEnglish: React.FC = () => {
             { label: "React Native" },
             { label: "Tailwind" },
           ]}
-        />
-      </Section>
-      <Section index={5} title="Internships">
-        <SectionItem
-          city="Natal"
-          period="Aug 2017 — Nov 2017"
-          title="Embedded Systems Engineer at Centro de Lançamento da Barreira do Inferno (CLBI)"
-          description={
-            <Text>
-              Development of embedded intelligence for a confidential project at
-              CLBI using microprocessors with the assistance of the prototyping
-              platform <b>Arduino</b> in <b>C++</b>.
-            </Text>
-          }
-        />
-        <SectionItem
-          city="Natal"
-          period="Aug 2018 — Jul 2019"
-          title="Full Stack Developer at Lógica Sistemas de Natal Informação"
-          description={
-            <Text>
-              Full Stack Developer member of a team that worked on bug fixes and
-              development of new features in an Enterprise Resource Planning
-              (ERP) system, built in <b>PHP</b>, focusing on software solutions
-              for telecommunications and business management issues.
-            </Text>
-          }
         />
       </Section>
       <Section index={4} title="LANGUAGES">
