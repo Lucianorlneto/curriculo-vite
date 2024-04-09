@@ -33,8 +33,8 @@ const LucianoEnglish: React.FC = () => {
           description={
             <div>
               <Text>
-                Full Stack and Mobile Developer, utilizing React Native, with
-                over 3 years of experience.
+                Full Stack and Mobile Developer, working with React Native, with
+                over 3 years of experience in the javascript ecosystem.
               </Text>
               <Text>
                 Professional experience in a variety of technologies, including{" "}
@@ -47,7 +47,7 @@ const LucianoEnglish: React.FC = () => {
                 in computer engineering, believing in the power of programming
                 to solve problems. If there's a logistical/business problem,
                 there's certainly a solution using programming, aided by logic,
-                and that's why passionate about the field.
+                and that's why I`m passionate about the field.
               </Text>
             </div>
           }
@@ -57,6 +57,7 @@ const LucianoEnglish: React.FC = () => {
       <Section index={2} title="Experience">
         <SectionItem
           period="May 2022 — Present"
+          time="1 year and 11 months"
           title="Sparta Labs/Môre"
           city="São Paulo (Remote)"
           description={
@@ -65,95 +66,114 @@ const LucianoEnglish: React.FC = () => {
                 <li>Front-end Mid-level Developer</li>
               </Text>
               <Text>
-                Responsible for assisting in development, maintenance, test
-                implementation, and integration with <b>REST APIs</b> for mobile
-                applications implemented in <b>React Native</b>, as well as web
-                applications implemented in <b>React</b>, using <b>ChakraUi</b>,
-                and also cross-platform applications implemented in{" "}
-                <b>React Native Web</b> and <b>Expo</b>, using <b>Tailwind</b>{" "}
-                for styling and <b>TypeScript</b>.
+                <li className="pl-4">
+                  Responsible for assisting in development, maintenance, test
+                  implementation, and integration with <b>REST APIs</b> for
+                  mobile applications implemented in <b>React Native</b>, as
+                  well as web applications implemented in <b>React</b>, using{" "}
+                  <b>ChakraUi</b>, and also cross-platform applications
+                  implemented in <b>React Native Web</b> and <b>Expo</b>, using{" "}
+                  <b>Tailwind</b> for styling and <b>TypeScript</b>. Following
+                  best practicies on code review.
+                </li>
               </Text>
               <Text>
-                Also worked on the integration and implementation of tools from{" "}
-                <b>Google Firebase</b> such as{" "}
-                <b>
-                  <i>Push Notifications</i>
-                </b>
-                ,{" "}
-                <b>
-                  <i>Remote Config</i>
-                </b>
-                , and{" "}
-                <b>
-                  <i>Database</i>
-                </b>
-                , as well as{" "}
-                <b>
-                  <i>Firebase Authentication</i>
-                </b>
-                , and{" "}
-                <b>
-                  <i>Google Analytics</i>
-                </b>{" "}
-                also .
+                <li className="pl-4">
+                  Also worked on the integration and implementation of tools
+                  from <b>Google Firebase</b> such as{" "}
+                  <b>
+                    <i>Push Notifications</i>
+                  </b>
+                  ,{" "}
+                  <b>
+                    <i>Remote Config</i>
+                  </b>
+                  , and{" "}
+                  <b>
+                    <i>Database</i>
+                  </b>
+                  , as well as{" "}
+                  <b>
+                    <i>Firebase Authentication</i>
+                  </b>
+                  , and{" "}
+                  <b>
+                    <i>Google Analytics</i>
+                  </b>
+                  .
+                </li>
               </Text>
             </div>
           }
         />
         <SectionItem
           period="Aug 2018 — May 2022"
+          time="3 years and 9 months"
           title="Lógica Sistemas de Informação"
           city="Natal"
           description={
             <div>
               <Text className="font-bold italic text-lg">
-                <li>Internship as Junior Full Stack Developer</li>
-              </Text>
-              <Text>
-                Full Stack Developer member of a team that worked on bug fixes
-                and development of new features in an Enterprise Resource
-                Planning (ERP) system, built in <b>PHP</b>, focusing on software
-                solutions for telecommunications and business management issues.
-              </Text>
-              <Text className="mt-4 font-bold italic text-lg">
                 <li>Junior Full Stack Developer</li>
               </Text>
               <Text>
-                Member of a team responsible for bug fixes and development of
-                new features in an Enterprise Resource Planning (ERP) system
-                developed in <b>PHP</b>.
+                <li className="pl-4">
+                  Member of a team responsible for bug fixes and development of
+                  new features in an Enterprise Resource Planning (ERP) system
+                  developed in <b>PHP</b>.
+                </li>
               </Text>
               <Text>
-                Responsible for third-party API integrations and the creation of{" "}
-                <b>REST APIs</b>.
+                <li className="pl-4">
+                  Responsible for third-party API integrations and the creation
+                  of <b>REST APIs</b>.
+                </li>
               </Text>
               <Text>
-                Mobile Developer Utilized <b>React Native</b> and worked with
-                two APIs: one <b>REST</b> API developed in <b>PHP</b> (
-                <b>Lumen</b>) and the other <b>GraphQL</b> developed in{" "}
-                <b>Node.js</b>.
+                <li className="pl-4">
+                  Mobile Developer working with <b>React Native</b> and a
+                  several integration APIs that used technologies like{" "}
+                  <b>PHP</b>, <b>GraphQL</b> and <b>Node.js</b>.
+                </li>
               </Text>
               <Text>
-                Experience in Deployment of applications in <b>Docker</b> and{" "}
-                <b>Kubernetes</b> and use of <b>SQL</b> databases, specifically{" "}
-                <b>PostgreSQL</b>.
+                <li className="pl-4">
+                  Experience in Deployment of applications in <b>Docker</b> and{" "}
+                  <b>Kubernetes</b> and use of <b>SQL</b> databases,
+                  specifically <b>PostgreSQL</b>.
+                </li>
+              </Text>
+              <Text className="mt-4 font-bold italic text-lg">
+                <li>Internship as Junior Full Stack Developer</li>
+              </Text>
+              <Text>
+                <li className="pl-4">
+                  Full Stack Developer member of a team that worked on bug fixes
+                  and development of new features in an Enterprise Resource
+                  Planning (ERP) system, built in <b>PHP</b>, focusing on
+                  software solutions for telecommunications and business
+                  management issues.
+                </li>
               </Text>
             </div>
           }
         />
         <SectionItem
           period="Aug 2017 — Nov 2017"
+          time="3 months"
           title="Barreira do Inferno Launch Center (CLBI)"
           city="Natal"
           description={
             <div>
-              <Text className="font-bold italic text-lg">
+              <Text className="font-bold italic text-lg text-">
                 <li>Internship as Embedded Systems Engineer</li>
               </Text>
               <Text>
-                Development of embedded intelligence for a confidential project
-                at CLBI using microprocessors with the assistance of the
-                prototyping platform <b>Arduino</b> in <b>C++</b>.
+                <li className="pl-4">
+                  Development of embedded intelligence for a confidential
+                  project at CLBI using microprocessors with the assistance of
+                  the prototyping platform <b>Arduino</b> in <b>C++</b>.
+                </li>
               </Text>
             </div>
           }
@@ -163,14 +183,15 @@ const LucianoEnglish: React.FC = () => {
         <SectionItem
           city="Natal"
           period="Mar 2013 — Jul 2018"
+          time="5 years and 4 months"
           title="Federal University of Rio Grande do Norte (UFRN)"
           description={
             <div>
-              <li className="text-lg font-[500]">
+              <li className="font-[500]">
                 Bachelor's Degree in Science and Technology (Mar 2013 — Jun
                 2016)
               </li>
-              <li className="text-lg font-[500]">
+              <li className="font-[500]">
                 Bachelor's Degree in Computer Engineering (Jul 2016 — Jul 2018)
               </li>
             </div>
