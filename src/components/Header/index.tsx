@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({
       <p className="font-bold text-5xl mb-6">{name}</p>
       <p className="font-bold text-3xl mb-16">{role}</p>
       <div className="flex flex-row">
-        <div className="flex-1">
+        <div className="flex-1 border-r-2 border-gray-300 px-6">
           <Item
             label={getTranslation({
               language: language,
@@ -90,7 +90,7 @@ const Header: React.FC<HeaderProps> = ({
             content={citizenship}
           />
         </div>
-        <div className="flex-1">
+        <div className="flex-1  px-6">
           <Item
             label={getTranslation({
               language: language,
