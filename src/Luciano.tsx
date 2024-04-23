@@ -38,7 +38,7 @@ const Luciano: React.FC = () => {
               <Text>
                 Com experiência profissional numa variedade de tecnologias,
                 incluindo <b>TypeScript</b>, <b>SQL</b>, <b>GraphQL</b>,{" "}
-                <b>React Native</b>, <b>React</b> e <b>PHP</b>.
+                <b>React Native</b>, <b>React</b>, <b>Tailwind</b> e <b>PHP</b>.
               </Text>
               <Text>
                 Escolheu seguir a área de programação, seguindo seu curso de
@@ -55,87 +55,107 @@ const Luciano: React.FC = () => {
 
       <Section index={2} title="EXPERIÊNCIA PROFISSIONAL">
         <SectionItem
-          period="08/2019 — 03/2022"
-          title="Desenvolvedor Full Stack Junior em Lógica Natal Sistemas de Informação"
-          city="Natal"
-          description={
-            <div>
-              <Text>
-                Desenvolvedor Full Stack integrante de uma equipe que trabalhava
-                com correções e desenvolvimento de novas funcionalidades em um
-                Sistema Integrado de Gestão Empresarial (ERP), desenvolvido em{" "}
-                <b>PHP</b>.
-              </Text>
-              <Text>
-                Responsável por integrações de API's de terceiros e com a
-                criação de <b>API's REST</b>.
-              </Text>
-              <Text>
-                Desenvolvedor Mobile, utilizando <b>React Native</b>, e
-                trabalhando com duas API's, uma <b>REST</b> desenvolvida em{" "}
-                <b>PHP</b>, <b>Lumen</b>, e a outra <b>GraphQL</b> desenvolvida
-                em <b>Node</b>.
-              </Text>
-              <Text>
-                Experiência com deploy de aplicações em <b>Docker</b> e{" "}
-                <b>Kubernetes</b> e utilização de banco de dados <b>SQL</b>,{" "}
-                <b>PostgreSQL</b>.
-              </Text>
-            </div>
-          }
-        />
-        <SectionItem
-          period="05/2022 — 02/2023"
-          title="Desenvolvedor Pleno Front-end em Sparta Labs"
-          city="Blumenau (Remoto)"
-          description={
-            <div>
-              <Text>
-                Integrante de uma squad ágil, com auxílio da plataforma{" "}
-                <b>ClickUp</b>, como front-end, trabalhou principalmente para
-                clientes integrantes do <b>Grupo Vamos</b> — controlados pela
-                holding SIMPAR, são líderes no setor de locação de caminhões,
-                máquinas e equipamentos do Brasil — implementando interfaces
-                desenvolvidas por designers da equipe, com auxílio da plataforma
-                Figma, utilizando <b>React Native</b> e <b>TypeScript</b>.
-              </Text>
-              <Text>
-                Respnsável, juntamente de sua squad, a desenvolver uma aplicação
-                mobile e a manter e adicionar novas funcionalidades a uma outra,
-                ambas em <b>React Native</b>, utilizando <b>TypeScript</b>.
-              </Text>
-            </div>
-          }
-        />
-        <SectionItem
-          period="03/2023 — atualmente"
-          title="Desenvolvedor Pleno Front-end em Môre"
+          period="mai 2022 — atualmente"
+          time="1 ano e 11 meses"
+          title="Sparta Labs/Môre"
           city="São Paulo (Remoto)"
           description={
             <div>
-              <Text>
-                Participou de diferentes squads ágeis de desenvolvimento, com
-                auxílio das plataformas ClickUp e Jira, atuando como
-                desenvolvedor front-end em clientes como{" "}
-                <b>Henry Schein Brasil</b>, <b>Smiles Fidelidade</b>,{" "}
-                <b>Semex Brasil</b>,<b>Marisa</b> e integrantes do{" "}
-                <b>Grupo Vamos</b>.
+              <Text className="-mt-4 font-bold italic text-lg">
+                <li>Desenvolvedor Pleno Front-end</li>
               </Text>
               <Text>
-                Responsável por auxiliar no desenvolvimento, mantimento,
-                implementação de testes e integrações com <b>API`s REST</b> para
-                aplicações mobile implementadas em <b>React Native</b>, assim
-                como aplicações web implementadas em <b>React</b>, utilizando a{" "}
-                <b>ChakraUi</b>, e também aplicações multiplataformas
-                implementadas em <b>React Native Web</b> e <b>Expo</b>,
-                utilizando <b>Tailwind</b> para estilização.
+                <li className="pl-4">
+                  Participou de diferentes squads ágeis de desenvolvimento, com
+                  auxílio das plataformas ClickUp e Jira, atuando como
+                  desenvolvedor front-end em clientes como{" "}
+                  <b>Henry Schein Brasil</b>, <b>Smiles Fidelidade</b>,{" "}
+                  <b>Semex Brasil</b>,<b>Marisa</b> e integrantes do{" "}
+                  <b>Grupo Vamos</b>.
+                </li>
               </Text>
               <Text>
-                Trabalhou também com o auxílio do <b>Google Firebase</b> para
-                implementação de integração com <i>Push Notifications</i>,{" "}
-                <i>Remote Config</i> e <i>Database</i> e{" "}
-                <i>Firebase Authentication</i>, assim como também autou com
-                auxílio do <i>Google Analytics</i>
+                <li className="pl-4">
+                  Responsável por auxiliar no desenvolvimento, mantimento,
+                  implementação de testes e integrações com <b>API`s REST</b>{" "}
+                  para aplicações mobile implementadas em <b>React Native</b>,
+                  assim como aplicações web implementadas em <b>React</b>,
+                  utilizando a <b>ChakraUi</b>, e também aplicações
+                  multiplataformas implementadas em <b>React Native Web</b> e{" "}
+                  <b>Expo</b>, utilizando <b>Tailwind</b> para estilização.
+                </li>
+              </Text>
+              <Text>
+                <li className="pl-4">
+                  Trabalhou também com o auxílio do <b>Google Firebase</b> para
+                  implementação de integração com <i>Push Notifications</i>,{" "}
+                  <i>Remote Config</i> e <i>Database</i> e <i> </i>, assim como
+                  também autou com auxílio do <i>Google Analytics</i>
+                </li>
+              </Text>
+            </div>
+          }
+        />
+        <SectionItem
+          period="ago 2018 — mar 2022"
+          time="3 anos e 9 meses"
+          title="Lógica Sistemas de Informação"
+          city="Natal"
+          description={
+            <div>
+              <Text className="font-bold italic text-lg">
+                <li>Desenvolvedor Full Stack Junior</li>
+              </Text>
+
+              <Text>
+                <li className="pl-4">
+                  Desenvolvedor Full Stack integrante de uma equipe que
+                  trabalhava com correções e desenvolvimento de novas
+                  funcionalidades em um Sistema Integrado de Gestão Empresarial
+                  (ERP), desenvolvido em <b>PHP</b>.
+                </li>
+              </Text>
+              <Text>
+                <li className="pl-4">
+                  Responsável por integrações de API's de terceiros e com a
+                  criação de <b>API's REST</b>.
+                </li>
+              </Text>
+              <Text>
+                <li className="pl-4">
+                  Desenvolvedor Mobile, utilizando <b>React Native</b>, e
+                  trabalhando com duas API's, uma <b>REST</b> desenvolvida em{" "}
+                  <b>PHP</b>, <b>Lumen</b>, e a outra <b>GraphQL</b>{" "}
+                  desenvolvida em <b>Node</b>.
+                </li>
+              </Text>
+              <Text>
+                <li className="pl-4">
+                  Experiência com deploy de aplicações em <b>Docker</b> e{" "}
+                  <b>Kubernetes</b> e utilização de banco de dados <b>SQL</b>,{" "}
+                  <b>PostgreSQL</b>.
+                </li>
+              </Text>
+            </div>
+          }
+        />
+        <SectionItem
+          city="Natal"
+          period="ago 2017 — nov 2017"
+          time="3 meses"
+          title="Centro de Lançamento da Barreira do Inferno (CLBI)"
+          description={
+            <div>
+              <Text className="-mt-4 font-bold italic text-lg">
+                <li>Engenheiro de Sistemas Embarcados</li>
+              </Text>
+              <Text>
+                <li className="pl-4">
+                  Desenvolvimento da inteligência embarcada de um projeto
+                  confidencial do CLBI utilizando de micro processadores com
+                  auxílio da plataforma de prototipagem <b>Arduíno</b> em{" "}
+                  <b>C++</b>.
+                </li>
               </Text>
             </div>
           }
@@ -144,21 +164,19 @@ const Luciano: React.FC = () => {
       <Section index={3} title="FORMAÇÃO ACADÊMICA">
         <SectionItem
           city="Natal"
-          period="fev 2010 — nov 2012"
-          title="Colégio Nossa Senhora das Neves"
-          description={<p>Ensino Médio</p>}
-        />
-        <SectionItem
-          city="Natal"
-          period="mar 2013 — jun 2016"
-          title="Universidade Federal do Rio Grande do Norte"
-          description={<p>Bacharel em Ciências & Tecnologia</p>}
-        />
-        <SectionItem
-          city="Natal"
-          period="jul 2016 — jul 2018"
-          title="Universidade Federal do Rio Grande do Norte"
-          description={<p>Bacharel em Engenharia da Computação</p>}
+          period="mar 2013 — jul 2018"
+          time="5 anos e 4 meses"
+          title="Universidade Federal do Rio Grande do Norte (UFRN)"
+          description={
+            <div>
+              <li className="font-[500]">
+                Bacharel em Engenharia da Computação (jul 2016 — jul 2018)
+              </li>
+              <li className="font-[500]">
+                Bacharel em Ciências & Tecnologia (mar 2013 — jun 2016)
+              </li>
+            </div>
+          }
         />
       </Section>
       <Section index={4} title="COMPETÊNCIAS">
@@ -175,34 +193,6 @@ const Luciano: React.FC = () => {
             { label: "React Native" },
             { label: "Tailwind" },
           ]}
-        />
-      </Section>
-      <Section index={5} title="ESTÁGIOS">
-        <SectionItem
-          city="Natal"
-          period="ago 2017 — nov 2017"
-          title="Engenheiro de Sistemas Embarcados em Centro de Lançamento da Barreira do Inferno (CLBI)"
-          description={
-            <Text>
-              Desenvolvimento da inteligência embarcada de um projeto
-              confidencial do CLBI utilizando de micro processadores com auxílio
-              da plataforma de prototipagem <b>Arduíno</b> em <b>C++</b>.
-            </Text>
-          }
-        />
-        <SectionItem
-          city="Natal"
-          period="ago 2018 — jul 2019"
-          title="Desenvolvedor Full Stack em Lógica Sistemas de Natal Informação"
-          description={
-            <Text>
-              Desenvolvedor Full Stack integrante de uma equipe que trabalhava
-              com correções e desenvolvimento de novas funcionalidades em um
-              Sistema Integrado de Gestão Empresarial (ERP), constrúido em{" "}
-              <b>PHP</b>, com foco em soluções em software para problemas de
-              telecomunicações e gestão empresarial.
-            </Text>
-          }
         />
       </Section>
       <Section index={4} title="IDIOMAS">
