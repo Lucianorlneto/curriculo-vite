@@ -57,9 +57,9 @@ const LucianoEnglish: React.FC = () => {
       <Section index={2} title="Experience">
         <SectionItem
           period="May 2022 — Present"
-          time="1 year and 11 months"
-          title="Sparta Labs/Môre"
-          city="São Paulo (Remote)"
+          title="Sparta Labs/Môre/Bamse Digital"
+          city="Blumenau (Remote)"
+          present
           description={
             <div>
               <Text className="-mt-4 font-bold italic text-lg">
