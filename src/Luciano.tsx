@@ -15,7 +15,6 @@ const Luciano: React.FC = () => {
         role="Desenvolvedor de Software"
         address={`Rua Niquelândia, n 135, 59068-820, Natal. Brasil`}
         email="lucianorlneto@gmail.com"
-        birthcity="Natal"
         birthdate="06/12/1994"
         citizenship="Brasileiro"
         phone="+55 84 9 9131-7498"
@@ -195,12 +194,12 @@ const Luciano: React.FC = () => {
           ]}
         />
       </Section>
-      <Section index={4} title="IDIOMAS">
+      <Section index={5} title="IDIOMAS">
         <SectionItemScore
           content={[{ label: "Português" }, { label: "Inglês" }]}
         />
       </Section>
-      <Section index={4} title="HOOBIES">
+      <Section index={6} title="HOBBIES">
         <SectionItem
           description={
             <Text>

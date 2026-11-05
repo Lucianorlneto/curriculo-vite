@@ -13,10 +13,8 @@ const LucianoEnglish: React.FC = () => {
       <Header
         name="Luciano Rodrigues Lucio Neto"
         role="Software Developer"
-        address={`Niquelândia Street, n 135, 59068-820, Natal. Brazil`}
+        address="Natal, Brazil"
         email="lucianorlneto@gmail.com"
-        birthcity="Natal"
-        birthdate="12/06/1994"
         citizenship="Brazilian"
         phone="+55 84 9 9131-7498"
         socialmedia={[
@@ -47,7 +45,7 @@ const LucianoEnglish: React.FC = () => {
                 in computer engineering, believing in the power of programming
                 to solve problems. If there's a logistical/business problem,
                 there's certainly a solution using programming, aided by logic,
-                and that's why I`m passionate about the field.
+                and that's why I'm passionate about the field.
               </Text>
             </div>
           }
@@ -71,10 +69,10 @@ const LucianoEnglish: React.FC = () => {
                   implementation, and integration with <b>REST APIs</b> for
                   mobile applications implemented in <b>React Native</b>, as
                   well as web applications implemented in <b>React</b>, using{" "}
-                  <b>ChakraUi</b>, and also cross-platform applications
+                  <b>Chakra UI</b>, and also cross-platform applications
                   implemented in <b>React Native Web</b> and <b>Expo</b>, using{" "}
                   <b>Tailwind</b> for styling and <b>TypeScript</b>. Following
-                  best practicies on code review.
+                  best practices on code review.
                 </li>
               </Text>
               <Text>
@@ -131,7 +129,7 @@ const LucianoEnglish: React.FC = () => {
               </Text>
               <Text>
                 <li className="pl-4">
-                  Mobile Developer working with <b>React Native</b> and a
+                  Mobile Developer working with <b>React Native</b> and
                   several integration APIs that used technologies like{" "}
                   <b>PHP</b>, <b>GraphQL</b> and <b>Node.js</b>.
                 </li>
@@ -165,7 +163,7 @@ const LucianoEnglish: React.FC = () => {
           city="Natal"
           description={
             <div>
-              <Text className="font-bold italic text-lg text-">
+              <Text className="font-bold italic text-lg">
                 <li>Internship as Embedded Systems Engineer</li>
               </Text>
               <Text>
@@ -183,7 +181,6 @@ const LucianoEnglish: React.FC = () => {
         <SectionItem
           city="Natal"
           period="Mar 2013 — Jul 2018"
-          time="5 years and 4 months"
           title="Federal University of Rio Grande do Norte (UFRN)"
           description={
             <div>
@@ -199,27 +196,33 @@ const LucianoEnglish: React.FC = () => {
         />
       </Section>
       <Section index={4} title="SKILLS">
-        <SectionItemScore
-          content={[
-            { label: "SQL" },
-            { label: "PHP" },
-            { label: "JavaScipt" },
-            { label: "TypeScript" },
-            { label: "Docker" },
-            { label: "Git" },
-            { label: "GraphQL" },
-            { label: "ReactJs" },
-            { label: "React Native" },
-            { label: "Tailwind" },
-          ]}
+        <SectionItem
+          description={
+            <div>
+              <Text>
+                <b>Languages:</b> TypeScript, JavaScript, SQL, PHP
+              </Text>
+              <Text>
+                <b>Front-end/Mobile:</b> React, React Native, Expo, React
+                Native Web, Tailwind, Chakra UI
+              </Text>
+              <Text>
+                <b>Back-end/Data:</b> Node.js, GraphQL, REST APIs, PostgreSQL,
+                Firebase
+              </Text>
+              <Text>
+                <b>DevOps/Tools:</b> Docker, Kubernetes, Git
+              </Text>
+            </div>
+          }
         />
       </Section>
-      <Section index={4} title="LANGUAGES">
+      <Section index={5} title="LANGUAGES">
         <SectionItemScore
           content={[{ label: "Portuguese" }, { label: "English" }]}
         />
       </Section>
-      <Section index={4} title="HOOBIES">
+      <Section index={6} title="HOBBIES">
         <SectionItem
           description={
             <Text>
