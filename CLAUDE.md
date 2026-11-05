@@ -13,13 +13,15 @@ yarn dev       # Vite dev server with HMR
 yarn build     # tsc type-check + vite build
 yarn lint      # ESLint, fails on any warning (--max-warnings 0)
 yarn preview   # serve the production build
+yarn pdf [luciano-en|luciano|cover-letter]  # build + headless Chromium → pdf/ (no args = all)
+yarn pdf:en / yarn pdf:pt                   # shortcuts
 ```
 
-There is no test suite.
+There is no test suite. First-time PDF setup: `yarn playwright install chromium`.
 
 ## Architecture
 
-- **Document selection**: `src/App.tsx` renders exactly one document component. To switch which document is shown, change the import/render there:
+- **Document selection**: `src/App.tsx` picks the document from the `?doc=` query param (`luciano-en` default, `luciano`, `cover-letter`); `scripts/generate-pdf.mjs` keeps its own key → filename map, so add new documents in both places:
   - `src/LucianoEnglish.tsx` — current main resume (English, `language="en"`).
   - `src/Luciano.tsx` — Portuguese resume.
   - `src/LucianoCoverLetter.tsx` — cover letter (plain JSX, doesn't use the shared components; recipient/company are hardcoded per application).
