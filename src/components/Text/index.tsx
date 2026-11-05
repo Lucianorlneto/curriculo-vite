@@ -6,7 +6,9 @@ interface TextProps {
 }
 
 const Text: React.FC<TextProps> = ({ className, children }) => {
-  return <p className={`mb-2 ${className}`}>{children}</p>;
+  return (
+    <p className={`mb-2 break-inside-avoid ${className}`}>{children}</p>
+  );
 };
 
 export default Text;

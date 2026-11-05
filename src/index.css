@@ -69,3 +69,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media print {
+  body {
+    min-height: auto;
+    margin-top: 0;
+  }
+  #root {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

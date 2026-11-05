@@ -101,7 +101,7 @@ const SectionItem: React.FC<SectionItemProps> = ({
         </div>
       </div>
       <div className="flex-1">
-        <div className="flex w-full flex-row mb-1">
+        <div className="flex w-full flex-row mb-1 break-after-avoid">
           <p className="flex flex-1 font-bold text-2xl text-left mr-8">
             {title}
           </p>

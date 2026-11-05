@@ -8,8 +8,7 @@ interface HeaderProps {
   email: string;
   citizenship: string;
   phone: string;
-  birthdate: string;
-  birthcity: string;
+  birthdate?: string;
   socialmedia: { name: string; link: string }[];
   language?: Languages;
 }
@@ -34,9 +33,11 @@ const Item: React.FC<ItemProps> = ({ label, content }) => {
                       href={item.link}
                       target="_blank"
                     >
-                      {item.name}
+                      {item.link
+                        .replace(/^https?:\/\/(www\.)?/, "")
+                        .replace(/\/$/, "")}
                     </a>
-                    {index !== content.length - 1 ? ", " : ""}
+                    {index !== content.length - 1 && <br />}
                   </>
                 );
               })
@@ -49,7 +50,6 @@ const Item: React.FC<ItemProps> = ({ label, content }) => {
 
 const Header: React.FC<HeaderProps> = ({
   address,
-  birthcity,
   birthdate,
   citizenship,
   email,
@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({
             label={getTranslation({
               language: language,
               ptText: "Nacionalidade",
-              enText: "Nacionality",
+              enText: "Nationality",
             })}
             content={citizenship}
           />
@@ -99,19 +99,21 @@ const Header: React.FC<HeaderProps> = ({
             })}
             content={phone}
           />
+          {birthdate && (
+            <Item
+              label={getTranslation({
+                language: language,
+                ptText: "Data de Nascimento",
+                enText: "Birthdate",
+              })}
+              content={birthdate}
+            />
+          )}
           <Item
             label={getTranslation({
               language: language,
-              ptText: "Data de Nascimento",
-              enText: "Birthdate",
-            })}
-            content={`${birthdate}`}
-          />
-          <Item
-            label={getTranslation({
-              language: language,
-              ptText: "Redes Sociais",
-              enText: "Social Media",
+              ptText: "Links",
+              enText: "Links",
             })}
             content={socialmedia}
           />
