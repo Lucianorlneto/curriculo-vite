@@ -1,5 +1,6 @@
 import moment from "moment";
 import React, { useMemo } from "react";
+import { getTranslation } from "../../utils/language";
 
 const engMonthArray = [
   "Jan",
@@ -38,6 +39,7 @@ interface SectionItemProps {
   city?: string;
   description?: React.ReactElement;
   present?: boolean;
+  language?: Languages;
 }
 
 const SectionItem: React.FC<SectionItemProps> = ({
@@ -47,6 +49,7 @@ const SectionItem: React.FC<SectionItemProps> = ({
   title,
   description,
   present,
+  language,
 }) => {
   const timeText = useMemo(() => {
     if (time) return time;
@@ -68,27 +71,30 @@ const SectionItem: React.FC<SectionItemProps> = ({
       const currentDate = moment();
 
       const monthsDiff = currentDate.diff(startDate, "M");
-      const yearsDiff = currentDate.diff(startDate, "y");
+      const years = Math.floor(monthsDiff / 12);
+      const months = monthsDiff % 12;
 
-      console.log(monthsDiff % 12, yearsDiff);
+      const plural = (count: number, singular: string, pluralText: string) =>
+        `${count} ${count === 1 ? singular : pluralText}`;
+      const yearsText = getTranslation({
+        language,
+        ptText: plural(years, "ano", "anos"),
+        enText: plural(years, "year", "years"),
+      });
+      const monthsText = getTranslation({
+        language,
+        ptText: plural(months, "mês", "meses"),
+        enText: plural(months, "month", "months"),
+      });
+      const and = getTranslation({ language, ptText: " e ", enText: " and " });
 
-      return `${
-        yearsDiff < 1
-          ? ""
-          : yearsDiff > 1
-          ? yearsDiff + " years"
-          : yearsDiff + " year"
-      } ${yearsDiff > 1 && monthsDiff % 12 > 1 ? " and " : ""} ${
-        monthsDiff % 12 < 1
-          ? ""
-          : monthsDiff % 12 > 1
-          ? (monthsDiff % 12) + " months"
-          : (monthsDiff % 12) + " month"
-      }`;
+      return [years > 0 && yearsText, months > 0 && monthsText]
+        .filter(Boolean)
+        .join(and);
     }
 
     return null;
-  }, [period, present, time]);
+  }, [language, period, present, time]);
 
   return (
     <div className="flex flex-row pt-6 mb-4">

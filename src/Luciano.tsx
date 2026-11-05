@@ -55,7 +55,7 @@ const Luciano: React.FC = () => {
       <Section index={2} title="EXPERIÊNCIA PROFISSIONAL">
         <SectionItem
           period="mai 2022 — atualmente"
-          time="1 ano e 11 meses"
+          present
           title="Sparta Labs/Môre"
           city="São Paulo (Remoto)"
           description={
