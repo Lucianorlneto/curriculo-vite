@@ -52,22 +52,22 @@ const SectionItem: React.FC<SectionItemProps> = ({
     if (time) return time;
 
     if (present && period) {
-      const startMonth = period.split(" ")[0];
+      const startMonth = period.split(" ")[0].toLowerCase();
       const startYear = parseInt(period.split(" ")[1], 10);
-      // const startDate = new Date(
-      //   startYear,
-      //   engMonthArray.indexOf(startMonth) || ptMonthArray.indexOf(startMonth),
-      //   1
-      // );
-      const startDate = moment(
-        `${startYear}-${
-          engMonthArray.indexOf(startMonth) || ptMonthArray.indexOf(startMonth)
-        }-01`
-      );
-      // const currentDate = new Date();
+      const findMonth = (months: string[]) =>
+        months.findIndex((month) => month.toLowerCase() === startMonth);
+      const startMonthIndex =
+        findMonth(engMonthArray) !== -1
+          ? findMonth(engMonthArray)
+          : findMonth(ptMonthArray);
+
+      if (startMonthIndex === -1 || isNaN(startYear)) return null;
+
+      // moment months are 0-based, matching the array index
+      const startDate = moment([startYear, startMonthIndex, 1]);
       const currentDate = moment();
 
-      const monthsDiff = currentDate.diff(startDate, "M") - 1;
+      const monthsDiff = currentDate.diff(startDate, "M");
       const yearsDiff = currentDate.diff(startDate, "y");
 
       console.log(monthsDiff % 12, yearsDiff);
