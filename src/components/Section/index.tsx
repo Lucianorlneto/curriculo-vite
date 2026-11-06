@@ -8,8 +8,8 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ children, index, title }) => {
   return (
-    <div className="justify-start mb-6 last:mb-0">
-      <p className="font-black text-2xl underline underline-offset-8 text-left break-after-avoid">
+    <div className="justify-start mb-4 last:mb-0">
+      <p className="font-black text-xl underline underline-offset-4 text-left break-after-avoid">
         {index} - {title.toUpperCase()}
       </p>
       {children}

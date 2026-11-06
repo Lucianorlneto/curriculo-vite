@@ -6,6 +6,9 @@ import {
   Text,
 } from "./components";
 
+// The 2017 CLBI internship is hidden to keep the resume at two pages.
+const showCLBIInternship = false;
+
 const LucianoEnglish: React.FC = () => {
   return (
     <>
@@ -23,7 +26,6 @@ const LucianoEnglish: React.FC = () => {
           },
           { name: "GitHub", link: "https://github.com/lucianorlneto" },
         ]}
-        language="en"
       />
       <Section index={1} title="PROFILE">
         <SectionItem
@@ -39,12 +41,10 @@ const LucianoEnglish: React.FC = () => {
                 <b>MCP</b> in daily development.
               </Text>
               <Text>
-                Previously worked for almost four years at Lógica on a{" "}
-                <b>PHP</b> ERP, <b>REST APIs</b> and <b>GraphQL</b>{" "}
-                integrations, with <b>PostgreSQL</b> databases and deployments
-                on <b>Docker</b> and <b>Kubernetes</b>. Holds a degree in
-                Computer Engineering from UFRN and is pursuing a postgraduate
-                degree in Applied AI Engineering.
+                Previously worked for almost four years at Lógica with{" "}
+                <b>PHP</b>, <b>React Native</b> and <b>PostgreSQL</b>. Holds a
+                Computer Engineering degree from UFRN and is pursuing a
+                postgraduate degree in Applied AI Engineering.
               </Text>
             </div>
           }
@@ -60,14 +60,8 @@ const LucianoEnglish: React.FC = () => {
           language="en"
           description={
             <div>
-              <Text className="-mt-4 font-bold italic text-lg">
+              <Text className="font-bold italic">
                 <li>Software Engineer</li>
-              </Text>
-              <Text>
-                <li className="pl-4">
-                  Front-end and full stack work in agile squads (Jira, ClickUp)
-                  serving the company's clients.
-                </li>
               </Text>
               <Text>
                 <li className="pl-4">
@@ -216,25 +210,18 @@ const LucianoEnglish: React.FC = () => {
                   layouts) are reused across several apps.
                 </li>
               </Text>
-              <Text>
-                <li className="pl-4">
-                  Integrated <b>Google Firebase</b> (Push Notifications, Remote
-                  Config, Database, Authentication) and <b>Google Analytics</b>{" "}
-                  into mobile apps.
-                </li>
-              </Text>
             </div>
           }
         />
         <SectionItem
-          period="Aug 2018 — May 2022"
-          time="3 years and 9 months"
+          period="Jul 2018 — May 2022"
+          time="3 years and 10 months"
           title="Lógica Sistemas de Informação"
           city="Natal"
           description={
             <div>
-              <Text className="font-bold italic text-lg">
-                <li>Full Stack Developer (Aug 2019 — May 2022)</li>
+              <Text className="font-bold italic">
+                <li>Full Stack Developer (Jul 2019 — May 2022)</li>
               </Text>
               <Text>
                 <li className="pl-4">
@@ -270,40 +257,33 @@ const LucianoEnglish: React.FC = () => {
                   <b>Kubernetes</b>.
                 </li>
               </Text>
-              <Text className="mt-4 font-bold italic text-lg">
-                <li>Full Stack Developer Intern (Aug 2018 — Aug 2019)</li>
-              </Text>
-              <Text>
-                <li className="pl-4">
-                  Full Stack Developer member of a team that worked on bug fixes
-                  and development of new features in an Enterprise Resource
-                  Planning (ERP) system, built in <b>PHP</b>, focusing on
-                  software solutions for telecommunications and business
-                  management issues.
-                </li>
+              <Text className="mt-2 font-bold italic">
+                <li>Full Stack Developer Intern (Jul 2018 — Jul 2019)</li>
               </Text>
             </div>
           }
         />
-        <SectionItem
-          period="Aug 2017 — Nov 2017"
-          time="3 months"
-          title="Barreira do Inferno Launch Center (CLBI)"
-          city="Natal"
-          description={
-            <div>
-              <Text className="font-bold italic text-lg">
-                <li>Internship as Embedded Systems Engineer</li>
-              </Text>
-              <Text>
-                <li className="pl-4">
-                  Wrote embedded <b>C++</b> on <b>Arduino</b> for a
-                  confidential CLBI project.
-                </li>
-              </Text>
-            </div>
-          }
-        />
+        {showCLBIInternship && (
+          <SectionItem
+            period="Aug 2017 — Nov 2017"
+            time="3 months"
+            title="Barreira do Inferno Launch Center (CLBI)"
+            city="Natal"
+            description={
+              <div>
+                <Text className="font-bold italic">
+                  <li>Internship as Embedded Systems Engineer</li>
+                </Text>
+                <Text>
+                  <li className="pl-4">
+                    Wrote embedded <b>C++</b> on <b>Arduino</b> for a
+                    confidential CLBI project.
+                  </li>
+                </Text>
+              </div>
+            }
+          />
+        )}
       </Section>
       <Section index={3} title="EDUCATION">
         <SectionItem
@@ -325,7 +305,7 @@ const LucianoEnglish: React.FC = () => {
         />
         <SectionItem
           city="Natal"
-          period="Mar 2013 — Jul 2018"
+          period="Mar 2013 — Jul 2019"
           title="Federal University of Rio Grande do Norte (UFRN)"
           description={
             <div>
@@ -334,7 +314,7 @@ const LucianoEnglish: React.FC = () => {
                 2016)
               </li>
               <li className="font-[500]">
-                Bachelor's Degree in Computer Engineering (Jul 2016 — Jul 2018)
+                Bachelor's Degree in Computer Engineering (Jul 2016 — Jul 2019)
               </li>
             </div>
           }

@@ -6,6 +6,9 @@ import {
   Text,
 } from "./components";
 
+// The 2017 CLBI internship is hidden to keep the resume at two pages.
+const showCLBIInternship = false;
+
 const Luciano: React.FC = () => {
   return (
     <>
@@ -38,11 +41,10 @@ const Luciano: React.FC = () => {
                 <b>Claude Code</b> com <b>MCP</b>.
               </Text>
               <Text>
-                Antes disso, trabalhou quase quatro anos na Lógica em um ERP
-                em <b>PHP</b>, <b>APIs REST</b> e integrações <b>GraphQL</b>,
-                com bancos <b>PostgreSQL</b> e deploy em <b>Docker</b> e{" "}
-                <b>Kubernetes</b>. Formado em Engenharia da Computação pela
-                UFRN e cursando pós-graduação em Engenharia de IA Aplicada.
+                Antes disso, trabalhou quase quatro anos na Lógica com{" "}
+                <b>PHP</b>, <b>React Native</b> e <b>PostgreSQL</b>. Formado
+                em Engenharia da Computação pela UFRN e cursando pós-graduação
+                em Engenharia de IA Aplicada.
               </Text>
             </div>
           }
@@ -57,14 +59,8 @@ const Luciano: React.FC = () => {
           city="Blumenau (Remoto)"
           description={
             <div>
-              <Text className="-mt-4 font-bold italic text-lg">
+              <Text className="font-bold italic">
                 <li>Engenheiro de Software</li>
-              </Text>
-              <Text>
-                <li className="pl-4">
-                  Atuação front-end e full stack em squads ágeis (Jira, ClickUp)
-                  atendendo os clientes da empresa.
-                </li>
               </Text>
               <Text>
                 <li className="pl-4">
@@ -212,25 +208,18 @@ const Luciano: React.FC = () => {
                   e layouts) são reaproveitados em vários apps.
                 </li>
               </Text>
-              <Text>
-                <li className="pl-4">
-                  Integrou o <b>Google Firebase</b> (Push Notifications, Remote
-                  Config, Database, Authentication) e o <b>Google Analytics</b> em
-                  apps mobile.
-                </li>
-              </Text>
             </div>
           }
         />
         <SectionItem
-          period="ago 2018 — mai 2022"
-          time="3 anos e 9 meses"
+          period="jul 2018 — mai 2022"
+          time="3 anos e 10 meses"
           title="Lógica Sistemas de Informação"
           city="Natal"
           description={
             <div>
-              <Text className="font-bold italic text-lg">
-                <li>Desenvolvedor Full Stack (ago 2019 — mai 2022)</li>
+              <Text className="font-bold italic">
+                <li>Desenvolvedor Full Stack (jul 2019 — mai 2022)</li>
               </Text>
               <Text>
                 <li className="pl-4">
@@ -267,37 +256,33 @@ const Luciano: React.FC = () => {
                   <b>Kubernetes</b>.
                 </li>
               </Text>
-              <Text className="mt-4 font-bold italic text-lg">
-                <li>Estágio em Desenvolvimento Full Stack (ago 2018 — ago 2019)</li>
-              </Text>
-              <Text>
-                <li className="pl-4">
-                  Trabalhou em correções e novas funcionalidades de um ERP em{" "}
-                  <b>PHP</b> voltado a telecomunicações e gestão empresarial.
-                </li>
+              <Text className="mt-2 font-bold italic">
+                <li>Estágio em Desenvolvimento Full Stack (jul 2018 — jul 2019)</li>
               </Text>
             </div>
           }
         />
-        <SectionItem
-          city="Natal"
-          period="ago 2017 — nov 2017"
-          time="3 meses"
-          title="Centro de Lançamento da Barreira do Inferno (CLBI)"
-          description={
-            <div>
-              <Text className="-mt-4 font-bold italic text-lg">
-                <li>Estágio em Sistemas Embarcados</li>
-              </Text>
-              <Text>
-                <li className="pl-4">
-                  Programou software embarcado em <b>C++</b> com <b>Arduino</b>{" "}
-                  para um projeto confidencial do CLBI.
-                </li>
-              </Text>
-            </div>
-          }
-        />
+        {showCLBIInternship && (
+          <SectionItem
+            city="Natal"
+            period="ago 2017 — nov 2017"
+            time="3 meses"
+            title="Centro de Lançamento da Barreira do Inferno (CLBI)"
+            description={
+              <div>
+                <Text className="font-bold italic">
+                  <li>Estágio em Sistemas Embarcados</li>
+                </Text>
+                <Text>
+                  <li className="pl-4">
+                    Programou software embarcado em <b>C++</b> com <b>Arduino</b>{" "}
+                    para um projeto confidencial do CLBI.
+                  </li>
+                </Text>
+              </div>
+            }
+          />
+        )}
       </Section>
       <Section index={3} title="FORMAÇÃO ACADÊMICA">
         <SectionItem
@@ -318,13 +303,13 @@ const Luciano: React.FC = () => {
         />
         <SectionItem
           city="Natal"
-          period="mar 2013 — jul 2018"
-          time="5 anos e 4 meses"
+          period="mar 2013 — jul 2019"
+          time="6 anos e 4 meses"
           title="Universidade Federal do Rio Grande do Norte (UFRN)"
           description={
             <div>
               <li className="font-[500]">
-                Bacharel em Engenharia da Computação (jul 2016 — jul 2018)
+                Bacharel em Engenharia da Computação (jul 2016 — jul 2019)
               </li>
               <li className="font-[500]">
                 Bacharel em Ciências e Tecnologia (mar 2013 — jun 2016)
