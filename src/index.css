@@ -76,7 +76,6 @@ button:focus-visible {
     margin-top: 0;
   }
   #root {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
