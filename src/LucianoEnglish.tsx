@@ -214,14 +214,14 @@ const LucianoEnglish: React.FC = () => {
           }
         />
         <SectionItem
-          period="Aug 2018 — May 2022"
-          time="3 years and 9 months"
+          period="Jul 2018 — May 2022"
+          time="3 years and 10 months"
           title="Lógica Sistemas de Informação"
           city="Natal"
           description={
             <div>
               <Text className="font-bold italic">
-                <li>Full Stack Developer (Aug 2019 — May 2022)</li>
+                <li>Full Stack Developer (Jul 2019 — May 2022)</li>
               </Text>
               <Text>
                 <li className="pl-4">
@@ -258,7 +258,7 @@ const LucianoEnglish: React.FC = () => {
                 </li>
               </Text>
               <Text className="mt-2 font-bold italic">
-                <li>Full Stack Developer Intern (Aug 2018 — Aug 2019)</li>
+                <li>Full Stack Developer Intern (Jul 2018 — Jul 2019)</li>
               </Text>
             </div>
           }
@@ -305,7 +305,7 @@ const LucianoEnglish: React.FC = () => {
         />
         <SectionItem
           city="Natal"
-          period="Mar 2013 — Jul 2018"
+          period="Mar 2013 — Jul 2019"
           title="Federal University of Rio Grande do Norte (UFRN)"
           description={
             <div>
@@ -314,7 +314,7 @@ const LucianoEnglish: React.FC = () => {
                 2016)
               </li>
               <li className="font-[500]">
-                Bachelor's Degree in Computer Engineering (Jul 2016 — Jul 2018)
+                Bachelor's Degree in Computer Engineering (Jul 2016 — Jul 2019)
               </li>
             </div>
           }

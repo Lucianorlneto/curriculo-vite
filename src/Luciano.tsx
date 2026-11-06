@@ -212,14 +212,14 @@ const Luciano: React.FC = () => {
           }
         />
         <SectionItem
-          period="ago 2018 — mai 2022"
-          time="3 anos e 9 meses"
+          period="jul 2018 — mai 2022"
+          time="3 anos e 10 meses"
           title="Lógica Sistemas de Informação"
           city="Natal"
           description={
             <div>
               <Text className="font-bold italic">
-                <li>Desenvolvedor Full Stack (ago 2019 — mai 2022)</li>
+                <li>Desenvolvedor Full Stack (jul 2019 — mai 2022)</li>
               </Text>
               <Text>
                 <li className="pl-4">
@@ -257,7 +257,7 @@ const Luciano: React.FC = () => {
                 </li>
               </Text>
               <Text className="mt-2 font-bold italic">
-                <li>Estágio em Desenvolvimento Full Stack (ago 2018 — ago 2019)</li>
+                <li>Estágio em Desenvolvimento Full Stack (jul 2018 — jul 2019)</li>
               </Text>
             </div>
           }
@@ -303,13 +303,13 @@ const Luciano: React.FC = () => {
         />
         <SectionItem
           city="Natal"
-          period="mar 2013 — jul 2018"
-          time="5 anos e 4 meses"
+          period="mar 2013 — jul 2019"
+          time="6 anos e 4 meses"
           title="Universidade Federal do Rio Grande do Norte (UFRN)"
           description={
             <div>
               <li className="font-[500]">
-                Bacharel em Engenharia da Computação (jul 2016 — jul 2018)
+                Bacharel em Engenharia da Computação (jul 2016 — jul 2019)
               </li>
               <li className="font-[500]">
                 Bacharel em Ciências e Tecnologia (mar 2013 — jun 2016)
