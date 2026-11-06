@@ -25,7 +25,7 @@ const Score: React.FC<{ score: number }> = ({ score }) => {
 
 const SectionItemScore: React.FC<SectionItemScore> = ({ content }) => {
   return (
-    <div className="grid grid-cols-2 ml-64 gap-4 pt-6 mb-4 -mt-12 text-left">
+    <div className="grid grid-cols-2 ml-52 gap-4 pt-3 mb-2 -mt-9 text-left">
       {content?.map((item) => {
         return (
           <div className="flex flex-row">

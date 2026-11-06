@@ -7,7 +7,7 @@ interface TextProps {
 
 const Text: React.FC<TextProps> = ({ className, children }) => {
   return (
-    <p className={`mb-2 break-inside-avoid ${className}`}>{children}</p>
+    <p className={`mb-1 break-inside-avoid ${className}`}>{children}</p>
   );
 };
 

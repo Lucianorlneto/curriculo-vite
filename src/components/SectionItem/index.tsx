@@ -97,8 +97,8 @@ const SectionItem: React.FC<SectionItemProps> = ({
   }, [language, period, present, time]);
 
   return (
-    <div className="flex flex-row pt-6 mb-4">
-      <div className="flex flex-col min-w-64 items-start justify-start border-red-700 left-0">
+    <div className="flex flex-row pt-3 mb-2">
+      <div className="flex flex-col min-w-52 items-start justify-start border-red-700 left-0">
         <div>
           <p className="inline-block font-bold underline text-left items-end mt-1">
             {period}
@@ -113,7 +113,7 @@ const SectionItem: React.FC<SectionItemProps> = ({
           </p>
           <p className="w-20 mt-1 italic">{city}</p>
         </div>
-        <div className={`pr-4 pt-4 text-left ${title ? "" : "-mt-[70px]"}`}>
+        <div className={`pr-4 pt-2 text-left ${title ? "" : "-mt-[52px]"}`}>
           {description}
         </div>
       </div>

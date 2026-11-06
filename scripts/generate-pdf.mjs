@@ -1,15 +1,23 @@
 // Builds the app, serves it with `vite preview` and prints each document to PDF
 // with headless Chromium. Usage: `yarn pdf [luciano-en|luciano|cover-letter ...]`
-// (no arguments = all documents). Output goes to `pdf/`.
-import { mkdir } from "node:fs/promises";
+// (no arguments = all documents). Output goes to `pdf/<name>-<YYYYMMDD>.pdf`;
+// older dated copies of the same document are removed.
+import { mkdir, readdir, rm } from "node:fs/promises";
 import { build, preview } from "vite";
 import { chromium } from "playwright";
 
 const documents = {
-  "luciano-en": "Luciano-Neto-Resume-EN.pdf",
-  luciano: "Luciano-Neto-Curriculo-PT.pdf",
-  "cover-letter": "Luciano-Neto-Cover-Letter.pdf",
+  "luciano-en": "Luciano-Neto-Resume-EN",
+  luciano: "Luciano-Neto-Curriculo-PT",
+  "cover-letter": "Luciano-Neto-Cover-Letter",
 };
+
+const now = new Date();
+const date = [
+  now.getFullYear(),
+  String(now.getMonth() + 1).padStart(2, "0"),
+  String(now.getDate()).padStart(2, "0"),
+].join("");
 
 const requested = process.argv.slice(2);
 const unknown = requested.filter((key) => !(key in documents));
@@ -36,7 +44,14 @@ try {
     await page.goto(`${baseUrl}?doc=${key}`, { waitUntil: "networkidle" });
     await page.evaluate(() => document.fonts.ready);
 
-    const path = `pdf/${documents[key]}`;
+    const name = documents[key];
+    for (const file of await readdir("pdf")) {
+      if (new RegExp(`^${name}(-\\d{8})?\\.pdf$`).test(file)) {
+        await rm(`pdf/${file}`);
+      }
+    }
+
+    const path = `pdf/${name}-${date}.pdf`;
     await page.pdf({
       path,
       format: "A4",
