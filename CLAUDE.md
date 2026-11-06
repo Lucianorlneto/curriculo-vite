@@ -13,7 +13,7 @@ yarn dev       # Vite dev server with HMR
 yarn build     # tsc type-check + vite build
 yarn lint      # ESLint, fails on any warning (--max-warnings 0)
 yarn preview   # serve the production build
-yarn pdf [luciano-en|luciano|cover-letter]  # build + headless Chromium → pdf/ (no args = all)
+yarn pdf [luciano-en|luciano|cover-letter]  # build + headless Chromium → pdf/<name>-YYYYMMDD.pdf (no args = all)
 yarn pdf:en / yarn pdf:pt                   # shortcuts
 ```
 
