@@ -71,6 +71,10 @@ button:focus-visible {
 }
 
 @media print {
+  html {
+    font-size: 13px;
+    line-height: 1.4;
+  }
   body {
     min-height: auto;
     margin-top: 0;

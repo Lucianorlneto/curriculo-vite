@@ -1,5 +1,4 @@
 import React from "react";
-import { getTranslation } from "../../utils/language";
 
 interface HeaderProps {
   name: string;
@@ -10,43 +9,7 @@ interface HeaderProps {
   phone: string;
   birthdate?: string;
   socialmedia: { name: string; link: string }[];
-  language?: Languages;
 }
-
-interface ItemProps {
-  label: string;
-  content: string | { name: string; link: string }[];
-}
-
-const Item: React.FC<ItemProps> = ({ label, content }) => {
-  return (
-    <div className="flex flex-row mb-2">
-      <p className="font-bold text-lg w-32 mr-2">{label}</p>
-      <div className="flex flex-1 items-center">
-        <p className="text-sm">
-          {Array.isArray(content)
-            ? content.map((item, index) => {
-                return (
-                  <React.Fragment key={item.link}>
-                    <a
-                      className="text-black underline"
-                      href={item.link}
-                      target="_blank"
-                    >
-                      {item.link
-                        .replace(/^https?:\/\/(www\.)?/, "")
-                        .replace(/\/$/, "")}
-                    </a>
-                    {index !== content.length - 1 && <br />}
-                  </React.Fragment>
-                );
-              })
-            : content}
-        </p>
-      </div>
-    </div>
-  );
-};
 
 const Header: React.FC<HeaderProps> = ({
   address,
@@ -57,68 +20,30 @@ const Header: React.FC<HeaderProps> = ({
   phone,
   role,
   socialmedia,
-  language,
 }) => {
+  const contacts = [address, citizenship, birthdate, email, phone].filter(
+    Boolean,
+  );
+
   return (
-    <div className="text-left mb-6">
-      <p className="font-bold text-5xl mb-2">{name}</p>
-      <p className="font-bold text-3xl mb-4">{role}</p>
-      <div className="flex flex-row">
-        <div className="flex-1 border-r-2 border-gray-300 px-6">
-          <Item
-            label={getTranslation({
-              language: language,
-              ptText: "Endereço",
-              enText: "Address",
-            })}
-            content={address}
-          />
-          <Item
-            label={getTranslation({
-              language: language,
-              ptText: "E-mail",
-              enText: "Email",
-            })}
-            content={email}
-          />
-          <Item
-            label={getTranslation({
-              language: language,
-              ptText: "Nacionalidade",
-              enText: "Nationality",
-            })}
-            content={citizenship}
-          />
-        </div>
-        <div className="flex-1  px-6">
-          <Item
-            label={getTranslation({
-              language: language,
-              ptText: "Telefone",
-              enText: "Phone",
-            })}
-            content={phone}
-          />
-          {birthdate && (
-            <Item
-              label={getTranslation({
-                language: language,
-                ptText: "Data de Nascimento",
-                enText: "Birthdate",
-              })}
-              content={birthdate}
-            />
-          )}
-          <Item
-            label={getTranslation({
-              language: language,
-              ptText: "Links",
-              enText: "Links",
-            })}
-            content={socialmedia}
-          />
-        </div>
-      </div>
+    <div className="text-left mb-4">
+      <p className="font-bold text-5xl">{name}</p>
+      <p className="font-bold text-2xl mb-2">{role}</p>
+      <p>{contacts.join(" · ")}</p>
+      <p>
+        {socialmedia.map((item, index) => (
+          <React.Fragment key={item.link}>
+            {index > 0 && " · "}
+            <a
+              className="text-black underline"
+              href={item.link}
+              target="_blank"
+            >
+              {item.link.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
+            </a>
+          </React.Fragment>
+        ))}
+      </p>
     </div>
   );
 };

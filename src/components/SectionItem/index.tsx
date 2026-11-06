@@ -96,27 +96,17 @@ const SectionItem: React.FC<SectionItemProps> = ({
     return null;
   }, [language, period, present, time]);
 
+  const meta = [period, timeText, city].filter(Boolean).join(" · ");
+
   return (
-    <div className="flex flex-row pt-3 mb-2">
-      <div className="flex flex-col min-w-52 items-start justify-start border-red-700 left-0">
-        <div>
-          <p className="inline-block font-bold underline text-left items-end mt-1">
-            {period}
-          </p>
-          {timeText && <p className="text-center items-end mt-1">{timeText}</p>}
+    <div className="pt-2 mb-1">
+      {(title || meta) && (
+        <div className="flex flex-row items-baseline mb-1 break-after-avoid">
+          <p className="flex-1 font-bold text-xl text-left mr-4">{title}</p>
+          <p className="text-right text-sm whitespace-nowrap">{meta}</p>
         </div>
-      </div>
-      <div className="flex-1">
-        <div className="flex w-full flex-row mb-1 break-after-avoid">
-          <p className="flex flex-1 font-bold text-2xl text-left mr-8">
-            {title}
-          </p>
-          <p className="w-20 mt-1 italic">{city}</p>
-        </div>
-        <div className={`pr-4 pt-2 text-left ${title ? "" : "-mt-[52px]"}`}>
-          {description}
-        </div>
-      </div>
+      )}
+      <div className="text-left">{description}</div>
     </div>
   );
 };
