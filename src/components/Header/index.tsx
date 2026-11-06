@@ -27,7 +27,7 @@ const Item: React.FC<ItemProps> = ({ label, content }) => {
           {Array.isArray(content)
             ? content.map((item, index) => {
                 return (
-                  <>
+                  <React.Fragment key={item.link}>
                     <a
                       className="text-black underline"
                       href={item.link}
@@ -38,7 +38,7 @@ const Item: React.FC<ItemProps> = ({ label, content }) => {
                         .replace(/\/$/, "")}
                     </a>
                     {index !== content.length - 1 && <br />}
-                  </>
+                  </React.Fragment>
                 );
               })
             : content}

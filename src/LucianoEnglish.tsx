@@ -58,6 +58,7 @@ const LucianoEnglish: React.FC = () => {
           title="Sparta Labs/Môre/Bamse Digital"
           city="Blumenau (Remote)"
           present
+          language="en"
           description={
             <div>
               <Text className="-mt-4 font-bold italic text-lg">
