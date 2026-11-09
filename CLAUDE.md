@@ -19,6 +19,8 @@ yarn pdf:en / yarn pdf:pt                   # shortcuts
 
 There is no test suite. First-time PDF setup: `yarn playwright install chromium`.
 
+`scripts/generate-pdf.mjs` calls `document.body.normalize()` before printing: the whitespace-only text nodes from JSX `{" "}` otherwise lose their space in the PDF text layer (ATS reads "withMCP"). Printing manually from the browser does not get this fix.
+
 ## Architecture
 
 - **Document selection**: `src/App.tsx` picks the document from the `?doc=` query param (`luciano-en` default, `luciano`, `cover-letter`); `scripts/generate-pdf.mjs` keeps its own key → filename map, so add new documents in both places:

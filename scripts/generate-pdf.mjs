@@ -43,6 +43,10 @@ try {
   for (const key of keys) {
     await page.goto(`${baseUrl}?doc=${key}`, { waitUntil: "networkidle" });
     await page.evaluate(() => document.fonts.ready);
+    // JSX `{" "}` renders as a separate whitespace-only text node, and Chromium
+    // drops those spaces from the PDF text layer ("withMCP"), which breaks
+    // copy/paste and ATS keyword parsing. Merging adjacent text nodes fixes it.
+    await page.evaluate(() => document.body.normalize());
 
     const name = documents[key];
     for (const file of await readdir("pdf")) {
