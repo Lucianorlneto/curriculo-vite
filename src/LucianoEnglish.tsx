@@ -16,6 +16,7 @@ const LucianoEnglish: React.FC = () => {
         name="Luciano Rodrigues Lucio Neto"
         role="Software Engineer"
         address="Natal, Brazil"
+        availability="Open to remote (UTC−3)"
         email="lucianorlneto@gmail.com"
         citizenship="Brazilian"
         phone="+55 84 99131-7498"
@@ -32,13 +33,15 @@ const LucianoEnglish: React.FC = () => {
           description={
             <div>
               <Text>
-                Software Engineer with over 8 years of experience in web and
-                mobile development, mostly with <b>React Native</b>,{" "}
-                <b>React</b> and <b>TypeScript</b>. Since 2022, has worked on
-                apps for clients such as Marisa (millions of users), Omo
-                Lavanderia and Grupo Vamos, and on <b>NestJS</b> microservices
-                on the back end. Uses custom <b>Claude Code</b> workflows with{" "}
-                <b>MCP</b> in daily development.
+                Software Engineer with over 8 years of experience building web
+                and mobile products, mostly with <b>React Native</b>,{" "}
+                <b>React</b> and <b>TypeScript</b>, plus <b>Node.js</b> back
+                ends in <b>NestJS</b>. Since 2022, has worked in{" "}
+                <b>Agile/Scrum</b> teams on apps for clients such as Marisa
+                (millions of users), Omo Lavanderia and Grupo Vamos, and is now
+                the only developer on Marisa's e-commerce app. Built a{" "}
+                <b>Claude Code</b> harness with skills, subagents and{" "}
+                <b>MCP</b> that takes Jira cards to reviewed pull requests.
               </Text>
               <Text>
                 Previously worked for almost four years at Lógica with{" "}
@@ -65,52 +68,54 @@ const LucianoEnglish: React.FC = () => {
               </Text>
               <Text>
                 <li className="pl-4">
-                  <b>Marisa</b>: front end on the React Native apps, in two
-                  periods.
+                  <b>Marisa</b>: React Native front end in two periods, first on
+                  the digital banking module and, since May 2026, on the
+                  e-commerce app.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
-                  Since May 2026, maintains and extends the e-commerce app, used
-                  by millions of users, and generates the builds and publishes them
-                  to the <b>App Store</b> and <b>Google Play</b>.
+                  Only developer on the e-commerce app team. Maintains and
+                  extends the app, used by millions of users and built with{" "}
+                  <b>Redux</b> (legacy), <b>Zustand</b> and <b>React Query</b>,
+                  and publishes its builds to the <b>App Store</b> and{" "}
+                  <b>Google Play</b>.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
                   Fixed recurring bugs in analytics and campaign tracking,
-                  integrated the new <b>Scala</b> vendor for search,
-                  recommendations and dynamic product lists built from specific
-                  URLs, and is working on the full migration from{" "}
-                  <b>Hybris</b> + Scala to <b>VTEX</b>.
+                  integrated the new search vendor (Scala), also used for
+                  recommendations and URL-based product lists, and is migrating
+                  the app from <b>Hybris</b> and that vendor to <b>VTEX</b>.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
-                  Built a <b>Claude Code</b> harness for the project, with
-                  skills, subagents and an approval gate at each phase, that
-                  takes a <b>Jira</b> card to a pull request: the card comes in
-                  through the Atlassian <b>MCP</b>, a subagent checks it against
-                  the project docs for conflicts and gaps, and three reviewers
-                  validate the plan against the spec, project rules and code
-                  before implementation. On a partly legacy codebase picked up
-                  recently, it cut implementation time and rounds of QA
+                  Built a <b>Claude Code</b> harness with skills, subagents and
+                  an approval gate at each phase that takes a <b>Jira</b> card
+                  to a pull request: the card comes in through the Atlassian{" "}
+                  <b>MCP</b>, a subagent checks it against the project docs for
+                  conflicts and gaps, and three reviewers validate the plan
+                  against the spec, project rules and code. Compared with
+                  earlier projects, it cut implementation time and rounds of QA
                   rework.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
-                  Uses the <b>VTEX</b> MCP to support the migration and the{" "}
-                  <b>Firebase</b> MCP to analyze and fix crashes reported in{" "}
-                  <b>Crashlytics</b>.
+                  Fixed production crashes that QA had not caught, tracked down
+                  with the <b>Firebase</b> MCP and <b>Crashlytics</b>, and uses
+                  the <b>VTEX</b> MCP to support the migration.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
                   Earlier, in a team of three developers, moved the digital
-                  banking features out of the main app into a separate module
-                  loaded inside it, then built and maintained that module, which
-                  covers digital banking and insurance services.
+                  banking features out of the main app into a separate{" "}
+                  <b>React Native Web</b> module loaded inside it, then built and
+                  maintained that module, which covers digital banking and
+                  insurance and is used by hundreds of thousands of people.
                 </li>
               </Text>
               <Text>
@@ -124,27 +129,30 @@ const LucianoEnglish: React.FC = () => {
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
-                  Helped build the <b>React Native (Expo)</b> app: sign-up, store
-                  search on <b>Google Maps</b>, machine booking, starting machines
-                  at checkout, vouchers bought for other users, payments through
-                  the <b>PagBank</b> gateway, and live time and status for each
-                  machine, fed by the machine supplier's webhooks.
+                  Developed features of the <b>React Native (Expo)</b> app,
+                  built with <b>Zustand</b>, <b>React Query</b> and{" "}
+                  <b>NativeWind</b>: sign-up, store search on{" "}
+                  <b>Google Maps</b>, machine booking, starting machines at
+                  checkout, vouchers for other users, <b>PagBank</b> payments,
+                  live machine status from the supplier's webhooks,{" "}
+                  <b>Firebase</b> push notifications and deep linking.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
-                  On the back end, contributed to <b>NestJS</b> and{" "}
-                  <b>Fastify</b> microservices for payments, message consumption,
-                  the core domain and machine activation, using{" "}
-                  <b>PostgreSQL</b>, <b>Prisma</b> and <b>RabbitMQ</b>, and took
-                  part in the database modeling.
+                  On the back end, built features in <b>NestJS</b> and{" "}
+                  <b>Fastify</b> microservices for payments, messaging, the core
+                  domain and machine activation, with{" "}
+                  <b>PostgreSQL</b>, <b>Prisma</b> and <b>RabbitMQ</b>, and
+                  co-designed the database.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
-                  Wrote part of the test suite: end-to-end tests with{" "}
-                  <b>Maestro</b> and unit tests with <b>Jest</b> and{" "}
-                  <b>React Testing Library</b>.
+                  Wrote part of the tests (end-to-end with <b>Maestro</b>, unit
+                  with <b>Jest</b> and <b>React Testing Library</b>); the app
+                  shipped through a <b>CI/CD</b> pipeline on{" "}
+                  <b>GitHub Actions</b>.
                 </li>
               </Text>
               <Text>
@@ -164,50 +172,47 @@ const LucianoEnglish: React.FC = () => {
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
                   Built from scratch the truck driver app in{" "}
-                  <b>React Native (Expo)</b> for iOS and Android, with news, truck
-                  status and vehicle data. Delivered the MVP in 4 months and kept
-                  maintaining it; used by thousands of drivers.
+                  <b>React Native (Expo)</b> and <b>Redux</b> for iOS and Android,
+                  with news, truck status, vehicle data, push notifications
+                  through <b>Firebase</b> and deep linking. Delivered the MVP in 4
+                  months and kept maintaining it; used by thousands of drivers.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
-                  Built a fleet management web dashboard in <b>React</b> and{" "}
-                  <b>Chakra UI</b>, with the MVP delivered in 3 months, used by
-                  thousands of users. It covers fleet composition, repair history,
-                  and filters by region, state and city, plus a customizable home
-                  where users drag and drop cards from internal screens, each card
-                  with its own filter and a page filter that applies to all of
-                  them.
+                  Built a fleet management web dashboard in <b>React</b>,{" "}
+                  <b>Redux Toolkit</b> and <b>Chakra UI</b> (MVP in 3 months,
+                  thousands of users), with fleet composition, repair history,
+                  regional filters and a drag-and-drop home screen.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
-                  Maintained the <b>React Native</b> inspection app used in Vamos
-                  workshops, a dynamic checklist that guides the evaluation of each
-                  truck on arrival.
+                  Maintained the <b>React Native</b> and <b>Redux</b> inspection
+                  app used in Vamos workshops, a dynamic checklist that guides
+                  the evaluation of each truck on arrival.
                 </li>
               </Text>
               <Text>
                 <li className="ml-6 pl-4 list-[circle]">
-                  Helped implement end-to-end tests with <b>Cypress</b> and unit
-                  tests with <b>Jest</b>.
+                  Wrote end-to-end tests with <b>Cypress</b> and unit tests with{" "}
+                  <b>Jest</b>.
                 </li>
               </Text>
               <Text>
                 <li className="pl-4">
-                  At <b>Smiles Fidelidade</b>, in a team of four developers,
-                  adapted email templates to <b>Oracle Responsys</b> using{" "}
-                  <b>HTML/CSS</b>, <b>SQL</b> and <b>RPL</b> for the
-                  personalization logic.
+                  Shorter engagements: <b>Oracle Responsys</b> email templates{" "}
+                  (<b>HTML/CSS</b>, <b>SQL</b>, <b>RPL</b>) for{" "}
+                  <b>Smiles Fidelidade</b>, and vacation cover on{" "}
+                  <b>React Native</b> apps for <b>Semex Brasil</b> and{" "}
+                  <b>Henry Schein Brasil</b> (modular codebase shared across
+                  several apps).
                 </li>
               </Text>
               <Text>
                 <li className="pl-4">
-                  Covered vacations on <b>React Native</b> apps for{" "}
-                  <b>Henry Schein Brasil</b> and <b>Semex Brasil</b>. At Henry
-                  Schein, maintained a modular codebase whose business logic
-                  modules (rules, API connections) and UI modules (components,
-                  layouts) are reused across several apps.
+                  Reviewed teammates' pull requests across projects and
+                  onboarded colleagues joining them.
                 </li>
               </Text>
             </div>
@@ -231,17 +236,18 @@ const LucianoEnglish: React.FC = () => {
               </Text>
               <Text>
                 <li className="pl-4">
-                  Maintained a white label <b>React Native</b> app shipped to
-                  several clients, each with its own brand, colors and features,
-                  and managed its releases on the <b>App Store</b> and{" "}
-                  <b>Google Play</b>.
+                  Maintained a white label <b>React Native</b> app published as a
+                  separate store app for each of 12+ clients, with their own
+                  brand, colors and features, and managed the releases on the{" "}
+                  <b>App Store</b> and <b>Google Play</b>.
                 </li>
               </Text>
               <Text>
                 <li className="pl-4">
-                  Maintained an offline-first <b>React Native</b> app for
-                  clients' field technicians to record and review service
-                  visits, along with its <b>GraphQL</b> API in <b>Node.js</b>.
+                  Maintained an offline-first <b>React Native</b> app used by
+                  hundreds of field technicians across Brazil to record and
+                  review service visits, along with its <b>GraphQL</b> API in{" "}
+                  <b>Node.js</b>.
                 </li>
               </Text>
               <Text>
@@ -252,8 +258,8 @@ const LucianoEnglish: React.FC = () => {
               </Text>
               <Text>
                 <li className="pl-4">
-                  Shared responsibility for the <b>PostgreSQL</b> databases of
-                  these applications and deployed them with <b>Docker</b> and{" "}
+                  Co-managed the <b>PostgreSQL</b> databases of these apps and
+                  deployed them with <b>Docker</b> and{" "}
                   <b>Kubernetes</b>.
                 </li>
               </Text>
@@ -329,7 +335,8 @@ const LucianoEnglish: React.FC = () => {
               </Text>
               <Text>
                 <b>Front-end/Mobile:</b> React, React Native, Expo, React
-                Native Web, Tailwind, Chakra UI
+                Native Web, Redux, Redux Toolkit, Zustand, React Query,
+                Tailwind, NativeWind, Chakra UI
               </Text>
               <Text>
                 <b>Testing:</b> Jest, React Testing Library, Cypress,
@@ -344,7 +351,10 @@ const LucianoEnglish: React.FC = () => {
               </Text>
               <Text>
                 <b>DevOps/Tools:</b> Docker, Kubernetes, AWS, Cloudflare, Git,
-                App Store Connect, Google Play Console
+                GitHub Actions, App Store Connect, Google Play Console
+              </Text>
+              <Text>
+                <b>Practices:</b> Agile/Scrum, CI/CD, code review
               </Text>
               <Text>
                 <b>Observability:</b> Prometheus, Grafana Loki, Grafana Tempo
