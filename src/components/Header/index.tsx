@@ -4,6 +4,7 @@ interface HeaderProps {
   name: string;
   role: string;
   address: string;
+  availability?: string;
   email: string;
   citizenship: string;
   phone: string;
@@ -13,6 +14,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({
   address,
+  availability,
   birthdate,
   citizenship,
   email,
@@ -21,9 +23,14 @@ const Header: React.FC<HeaderProps> = ({
   role,
   socialmedia,
 }) => {
-  const contacts = [address, citizenship, birthdate, email, phone].filter(
-    Boolean,
-  );
+  const contacts = [
+    address,
+    availability,
+    citizenship,
+    birthdate,
+    email,
+    phone,
+  ].filter(Boolean);
 
   return (
     <div className="text-left mb-4">
